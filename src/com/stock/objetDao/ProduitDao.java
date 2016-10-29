@@ -36,6 +36,7 @@ Connection conn;
  ObservableList<Produit> datax;
  Label label;
  ProduitView pdt = new ProduitView(rf,qte,pr,dat,table, datax,label);
+ String ville;
  
 public ProduitDao(Connection conn){
 super(conn);
