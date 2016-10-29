@@ -12,8 +12,18 @@ package com.stock.model;
 public class User {
     
     private String username="";
+    private String nom;
     private String password="";
 
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    
     public String getUsername() {
         return username;
     }
