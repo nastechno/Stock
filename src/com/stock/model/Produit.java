@@ -17,16 +17,18 @@ public class Produit {
     private int qtePdt;
     private double prixPdt;
     private String dateExpiration;
+    private String ville;
 
     public Produit() {
     }
 
-    public Produit(int idPdt, String nomPdt, int qtePdt, int prixPdt, String dateExpiration) {
+    public Produit(int idPdt, String nomPdt, int qtePdt, int prixPdt, String dateExpiration,String ville) {
         this.idPdt = idPdt;
         this.nomPdt = nomPdt;
         this.qtePdt = qtePdt;
         this.prixPdt = prixPdt;
         this.dateExpiration = dateExpiration;
+        this.ville=ville;
     }
 
     public int getIdPdt() {
@@ -68,10 +70,12 @@ public class Produit {
     public void setDateExpiration(String dateExpiration) {
         this.dateExpiration = dateExpiration;
     }
-
-  
-    
-    
-    
+    public void setVille(String ville){
+     this.ville=ville;
+    }
+    public String getVille(){
+     return this.ville;
+    }
+       
     
 }
